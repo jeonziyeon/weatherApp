@@ -1,7 +1,7 @@
 
 // const API_KEY = '9d2d8425ed3d68dc55088b38b32a3b64';
 // main.js
-const API_KEY = "9d2d8425ed3d68dc55088b38b32a3b64";
+const API_KEY = "826d7a44b198cf8c95e55967b086ae22";
 const weatherInfo = document.getElementById('weather-info');
 const cityNameElement = document.getElementById('city-name');
 const weatherIconElement = document.getElementById('weather-icon');
