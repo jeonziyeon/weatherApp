@@ -21,11 +21,11 @@ cityInput.addEventListener('keydown', function(event) {
 
 function getWeather() {
     let city = cityInput.value;
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&lang=kr&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&lang=kr&units=metric`)
         .then(response => response.json())
         .then(data => {
             cityNameElement.textContent = data.name;
-            weatherIconElement.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+            weatherIconElement.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
             tempElement.textContent = `온도: ${data.main.temp}℃`;
             tempMinMaxElement.textContent = `최저/최고 온도: ${data.main.temp_min}℃ / ${data.main.temp_max}℃`;
             humidityElement.textContent = `습도: ${data.main.humidity}%`;
